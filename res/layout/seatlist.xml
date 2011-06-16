@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="#00000000">
+  <RelativeLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/page_bar">
+	<ImageView android:id="@+id/LibraryImageView"
+		   android:src="@drawable/page_library" 
+		   android:layout_height="50dip" 
+		   android:layout_width="70dip" 
+		   android:padding="5dip"
+		   android:layout_alignParentLeft="true"/>
+		   
+	<TextView android:id="@+id/LibraryTextView" 
+			android:layout_width="170dip"
+			android:layout_height="50dip"
+			android:textSize="20dip"
+			android:textStyle="normal|bold"
+			android:gravity="center_vertical" 
+			android:text="도서관 좌석 현황"
+			android:textColor="#ffffff"
+			android:typeface="normal"
+			android:layout_toRightOf="@+id/LibraryImageView"/>
+	<ImageButton
+			android:id="@+id/SeatRefreshBtn"
+			android:src="@drawable/little_refresh_clicked"
+			android:background="#00000000"
+			android:layout_width="40dip"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@+id/SeatHomeBtn"
+			android:layout_marginTop="13dip"
+			android:singleLine="true"/>		
+	<ImageButton
+			android:id="@+id/SeatHomeBtn"
+			android:src="@drawable/little_home_clicked"
+			android:background="#00000000"
+			android:layout_width="40dip"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_margin="8dip"
+			android:singleLine="true"/>
+	</RelativeLayout>
+  <ListView
+  	android:id="@+id/list"
+  	android:paddingTop="10dip"
+  	android:layout_width="fill_parent"
+  	android:layout_height="match_parent"
+  	android:layout_weight="4"
+  	android:divider="#000069"
+  	android:dividerHeight="1dip"
+  	android:layoutAnimation="@anim/layout_bottom_to_top_slide"/>	
+</LinearLayout>

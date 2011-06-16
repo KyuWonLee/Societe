@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="match_parent"
+  android:background="#a0000000">
+  <RelativeLayout
+  	android:orientation="horizontal"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:background="#a0000000">
+  	<ImageButton
+  		android:id="@+id/HomeButton"
+  		android:layout_alignParentLeft="true"	
+  		android:background="@drawable/arview_homebtn"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+  	<ImageButton
+  		android:id="@+id/ViewButton"
+  		android:layout_alignParentRight="true"	
+  		android:background="@drawable/arview_viewbtn"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="15dip"/>
+  </RelativeLayout>
+</FrameLayout>

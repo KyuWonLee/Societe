@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent">
+	    <ImageView 
+			android:id="@+id/ImageV1" 
+			android:layout_height="fill_parent" 
+			android:paddingLeft="3dip" 
+			android:layout_width="200dip" 
+			android:paddingRight="3dip" 
+			android:paddingBottom="5dip" 
+			android:paddingTop="5dip"/>
+	    </LinearLayout>
+    
+	<ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content">   
+    	<LinearLayout
+    		android:orientation="vertical"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+	    <TextView
+	    	android:id="@+id/buildT"
+	    	android:layout_width="fill_parent"
+	    	android:background="@drawable/button_menu" android:textColor="#ffffff" android:text="  □건물이름" android:textSize="15dip" android:layout_height="25dip"/>
+	    <ScrollView android:id="@+id/ScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></ScrollView><TextView
+	    	android:id="@+id/buildT2"
+	    	android:layout_width="fill_parent"
+	    	android:text="" android:paddingLeft="6dip" android:paddingTop="2dip" android:textSize="14dip" android:layout_height="25dip"/>
+	    <TextView
+	    	android:id="@+id/buildT3"
+	    	android:layout_width="fill_parent"
+	    	android:text="  □설명" android:textColor="#ffffff" android:textSize="15dip" android:layout_height="25dip" android:background="@drawable/button_menu"/>
+	    <TextView
+	    	android:id="@+id/buildDesc"
+	    	android:layout_width="fill_parent"
+	    	android:text="" android:paddingLeft="6dip" android:minHeight="50dip" android:paddingTop="2dip" android:textSize="14dip" android:layout_height="wrap_content"/>
+	    <TextView
+	    	android:id="@+id/buildT5"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="25dip" android:background="@drawable/button_menu" android:textColor="#ffffff" android:text="  □편의시설" android:textSize="15dip"/>
+	    <TextView
+	    	android:id="@+id/buildR"
+	    	android:layout_width="fill_parent"
+	    	android:text="랩실, 자판기" android:paddingLeft="6dip" android:paddingTop="2dip" android:textSize="14dip" android:layout_height="40dip"/>
+	    <TextView
+	    	android:id="@+id/buildT7"
+	    	android:layout_width="fill_parent"
+	    	android:textSize="15dip" android:textColor="#ffffff" android:text="  □전화번호" android:background="@drawable/button_menu" android:layout_height="25dip"/>
+	    <TextView
+	    	android:id="@+id/buildTel"
+	    	android:layout_width="fill_parent"
+	    	android:text="010-4926-8178" android:paddingLeft="6dip" android:layout_height="30dip" android:paddingTop="2dip" android:textSize="14dip"/>
+	   </LinearLayout>
+	   </ScrollView>  
+	</LinearLayout>   	  
+

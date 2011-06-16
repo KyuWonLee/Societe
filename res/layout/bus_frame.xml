@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="120dip"
+  android:background="#00000000">
+  <LinearLayout
+  	android:layout_width="210dip"
+  	android:layout_height="170dip"
+  	android:orientation="vertical"
+  	android:background="#60408FAF"
+  	android:layout_gravity="right">
+  <ListView
+  	android:id="@+id/busListFrame"
+  	android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_margin="5dip"/>
+  <ProgressBar 
+  		android:id="@+android:id/progress_small"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"/>
+  </LinearLayout>
+</FrameLayout>

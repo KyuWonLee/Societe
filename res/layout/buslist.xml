@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" >
+  <RelativeLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/page_bar">
+	<ImageView android:id="@+id/BusImageView"
+		   android:src="@drawable/page_bus" 
+		   android:layout_height="50dip" 
+		   android:layout_width="70dip" 
+		   android:padding="5dip"
+		   android:layout_alignParentLeft="true"/>
+		   
+	<TextView android:id="@+id/BusTextView" 
+			android:layout_width="200dip"
+			android:layout_height="50dip"
+			android:textSize="20dip"
+			android:textStyle="normal|bold"
+			android:gravity="center_vertical" 
+			android:text="7016 버스 도착 정보"
+			android:textColor="#ffffff"
+			android:typeface="normal"
+			android:layout_toRightOf="@+id/BusImageView"/>
+			
+	</RelativeLayout>
+  <ListView
+  	android:id="@+id/list"
+  	android:paddingTop="10dip"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_weight="4"
+  	android:layoutAnimation="@anim/layout_bottom_to_top_slide"/>	   
+</LinearLayout>

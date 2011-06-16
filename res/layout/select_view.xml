@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/selectViewFrame"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#80000000">
+  <LinearLayout
+	  android:orientation="horizontal"
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:layout_gravity="center"
+	  android:background="#00000000">
+	  <ImageButton
+	  	android:id="@+id/map"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:src="@drawable/select_map_icon"
+	  	android:background="#00000000"
+	  	android:layout_marginRight="20dip"/>
+	  <ImageButton
+	  	android:id="@+id/List"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:src="@drawable/select_list_icon"
+	  	android:background="#00000000"
+	  	android:layout_marginLeft="20dip"/>
+  </LinearLayout>
+</FrameLayout>

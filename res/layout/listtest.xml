@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <RelativeLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/page_bar">
+	<ImageView android:id="@+id/ListImageView"
+		   android:src="@drawable/page_list" 
+		   android:layout_height="50dip" 
+		   android:layout_width="70dip" 
+		   android:paddingTop="5dip"
+		   android:layout_alignParentLeft="true"/>
+		   
+	<TextView android:id="@+id/ListTextView" 
+			android:layout_width="200dip"
+			android:layout_height="50dip"
+			android:textSize="20dip"
+			android:textStyle="normal|bold"
+			android:gravity="center_vertical" 
+			android:text="건물 리스트"
+			android:textColor="#ffffff"
+			android:typeface="normal"
+			android:layout_toRightOf="@+id/ListImageView"/>
+			
+	<ImageButton
+			android:id="@+id/BuildListHomeBtn"
+			android:src="@drawable/little_home_clicked"
+			android:background="#00000000"
+			android:layout_width="40dip"
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_margin="8dip"/>
+	</RelativeLayout>
+  <ListView
+  	android:id="@+id/list"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"/>
+</LinearLayout>

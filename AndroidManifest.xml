@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.com.smu.societe"
+      android:versionCode="3"
+      android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="8"/>
+	
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+    <application android:icon="@drawable/teamlogo" android:label="@string/app_name"
+    	android:debuggable="true">
+    	<uses-library android:name="com.google.android.maps" />
+        <activity android:name=".SplashActivity"
+        		  android:screenOrientation="landscape"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="MainSelectView" 
+			android:screenOrientation="landscape"
+			android:launchMode="singleTop"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" 
+			 />
+		<activity android:name="BuildInformView"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".TwitterView"
+			android:screenOrientation="landscape" 
+			android:launchMode="singleInstance">
+		</activity>
+		<activity android:name=".ListBuildView"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name="SMULibraryView" 
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".ReadingRoomView" 
+			android:screenOrientation="landscape">
+		</activity>
+		<activity android:name=".MapOverlay"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".ARView" 
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".TwitTimeline"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".SMUBusInfo"
+			android:screenOrientation="landscape" 
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".SMUNoticeView"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+		</activity>
+		<activity android:name=".NoticeDetailView"
+			android:screenOrientation="landscape" >
+			<intent-filter>  
+                <action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+		</activity>
+
+    </application>
+</manifest>
